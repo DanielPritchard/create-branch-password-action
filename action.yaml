@@ -19,6 +19,9 @@ inputs:
   role:
     description: 'The role of the password. Allowed values are `reader`, `writer`, `readerwriter`, or `admin`. Defaults to `admin`.'
     required: false
+  raw:
+    description: 'Changes if the output is a raw string or not. Allowed values are `true`.'
+    required: false
 outputs:
   username:
     description: 'The username to use for connecting to the branch.'
@@ -35,3 +38,4 @@ runs:
     - ${{ inputs.name }}
     - ${{ inputs.org_name }}
     - ${{ inputs.role }}
+    - ${{ inputs.raw }}

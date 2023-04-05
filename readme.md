@@ -43,7 +43,6 @@ jobs:
           echo "Hostname: ${{ steps.create_password.outputs.hostname }}" \
           echo "Username: ${{ steps.create_password.outputs.username }}" \
           echo "Password: ${{ steps.create_password.outputs.password }}"
-
 ```
 
 ## Input variables
@@ -58,6 +57,7 @@ jobs:
 **Optional**
 
 - `role` - The role of the password. Allowed values are `reader`, `writer`, `readerwriter`, or `admin`. Defaults to `admin`.
+- `raw` - Changes if the output is a raw string or not. Allowed values are `true`.
 
 ## Outputs
 
